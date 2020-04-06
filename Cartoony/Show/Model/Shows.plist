@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>Spongebob Squarepants</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>The Simpsons</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Tom and Jerry</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Johnny Test</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Ben 10</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Ed, Edd n Eddy</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Scooby-Doo, Where Are You!</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Adventure Time</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>The Amazing World of Gumball</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>The Powerpuff Girls</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Dexter&apos;s Labratory</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Kung Fu Panda: Legends of Awesomeness</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Rise of the Teenage Mutant Ninja Turtles</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Chowder</string>
+	</dict>
+</array>
+</plist>

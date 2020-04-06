@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>Jerry Mouse</string>
+		<key>rarity</key>
+		<string>Epic</string>
+		<key>imageAsset</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Tom Cat</string>
+		<key>rarity</key>
+		<string>Rare</string>
+		<key>imageAsset</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Johnny Test</string>
+		<key>rarity</key>
+		<string>Common</string>
+		<key>imageAsset</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Jimmy Neutron</string>
+		<key>rarity</key>
+		<string>Rare</string>
+		<key>imageAsset</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Chowder</string>
+		<key>rarity</key>
+		<string>Common</string>
+		<key>imageAsset</key>
+		<string>chowder</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Schnitzel</string>
+		<key>rarity</key>
+		<string>Common</string>
+		<key>imageAsset</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Ben Tennyson</string>
+		<key>rarity</key>
+		<string>Epic</string>
+		<key>imageAsset</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Grey Matter</string>
+		<key>rarity</key>
+		<string>Rare</string>
+		<key>imageAsset</key>
+		<string>greyMatter</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Jake the Dog</string>
+		<key>rarity</key>
+		<string>Common</string>
+		<key>imageAsset</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Darwin Watterson</string>
+		<key>rarity</key>
+		<string>Common</string>
+		<key>imageAsset</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Scooby-Doo</string>
+		<key>rarity</key>
+		<string>Rare</string>
+		<key>imageAsset</key>
+		<string>scoobydoo</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Po</string>
+		<key>rarity</key>
+		<string>Epic</string>
+		<key>imageAsset</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Tigress</string>
+		<key>rarity</key>
+		<string>Rare</string>
+		<key>imageAsset</key>
+		<string></string>
+	</dict>
+</array>
+</plist>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>itemName</key>
+		<string>Patrick Star</string>
+		<key>price</key>
+		<integer>60</integer>
+		<key>rarity</key>
+		<string>Rare</string>
+		<key>description</key>
+		<string>Patrick Star is a pink starfish who lives under a rock, neighbouring Squidward Tentacles and his best friend Spongebob Squarepants. He is unemployed and a self-proclaimed expert in the &quot;art of doing nothing&quot;  </string>
+	</dict>
+	<dict>
+		<key>itemName</key>
+		<string>Plankton</string>
+		<key>price</key>
+		<integer>70</integer>
+		<key>rarity</key>
+		<string>Rare</string>
+		<key>description</key>
+		<string>Plankton is the owner of the Chum Bucket who rivals his nemisis and former best friend Mr Krabs. He is always creating new ways to try and steal the Krabby Patty Secret Formula</string>
+	</dict>
+	<dict>
+		<key>itemName</key>
+		<string>Mr Krabs</string>
+		<key>price</key>
+		<integer>50</integer>
+		<key>rarity</key>
+		<string>Common</string>
+		<key>description</key>
+		<string>Mr Krabs is the owner of the Krusty Krab, employing Spongebob SquarePants and Squidward Tentacles. He also has a daughter Pearl and regularly goes on dates with Mrs Puff. Mr Krabs is very protective of his money and often has to fend of Plankton and his schemes.</string>
+	</dict>
+	<dict>
+		<key>itemName</key>
+		<string>Mrs Puff</string>
+		<key>price</key>
+		<integer>20</integer>
+		<key>rarity</key>
+		<string>Common</string>
+		<key>description</key>
+		<string>Mrs Puff owns the boating school in Bikini Bottom and regularly takes lessons with Spongebob Squarepants and Patrick Star. She is also romantically involved with Mr Krabs</string>
+	</dict>
+	<dict>
+		<key>itemName</key>
+		<string>Gary the Snail</string>
+		<key>price</key>
+		<integer>20</integer>
+		<key>rarity</key>
+		<string>Common</string>
+		<key>description</key>
+		<string>Gary the Snail is Spongebob&apos;s pet see snail who lives with him in their pineapple home. He vocolises like a cat and often helps Spongebob solve his dilemas.</string>
+	</dict>
+	<dict>
+		<key>itemName</key>
+		<string>Sandy Cheeks</string>
+		<key>price</key>
+		<integer>90</integer>
+		<key>rarity</key>
+		<string>Rare</string>
+		<key>description</key>
+		<string>Sandy Cheeks is a Squirell from Texas who lives in an air-filled dome in Bikini Bottom. She is a scientist, explorer and inventor and has many athletic interests such as karate, rodeo and sand-boarding. She is very good friends with Spongebob Squarepants and Patrick Star </string>
+	</dict>
+	<dict>
+		<key>itemName</key>
+		<string>The Flying Dutchman</string>
+		<key>price</key>
+		<integer>100</integer>
+		<key>rarity</key>
+		<string>Epic</string>
+		<key>description</key>
+		<string>The Flying Dutchman is an irritable, mischevous pirate ghost who haunts the seven seas. He has his own ship and often resides in his cavern, containing Davy Jones&apos; Locker - which is full of socks.</string>
+	</dict>
+	<dict>
+		<key>itemName</key>
+		<string>Pearl Krabs</string>
+		<key>price</key>
+		<integer>20</integer>
+		<key>rarity</key>
+		<string>Common</string>
+		<key>description</key>
+		<string>Pearl is the teenage daughter of Mr Krabs and is one of two people in Bikini Bottom who Mr Krabs holds above his money - the other being Mrs Puff. She works in the Bikini Bottom Mall but is set to inherit the Krusty Krab when she is older.  </string>
+	</dict>
+	<dict>
+		<key>itemName</key>
+		<string>Spongebob Squarepants</string>
+		<key>price</key>
+		<integer>100</integer>
+		<key>rarity</key>
+		<string>Epic</string>
+		<key>description</key>
+		<string>Spongebob Squarepants is a sea sponge who lives in a Pineapple with his pet sea snail Gary. He works as a fry cook at the Krusty Krab where he works along side Squidward Tentacles and Mr Krabs</string>
+	</dict>
+	<dict>
+		<key>itemName</key>
+		<string>Larry the Lobster</string>
+		<key>price</key>
+		<integer>40</integer>
+		<key>rarity</key>
+		<string>Common</string>
+		<key>description</key>
+		<string>Larry the Lobster is a bodybuilder who spends a lot of his time on the Goo Lagoon beach working out</string>
+	</dict>
+	<dict>
+		<key>itemName</key>
+		<string>Karen</string>
+		<key>price</key>
+		<integer>40</integer>
+		<key>rarity</key>
+		<string>Common</string>
+		<key>description</key>
+		<string>Karen is a waterproof super-computer who is married to Plankton and co-owns the Chum Bucket. She regularly supplies Plankton with ideas to steal the Krabby Patty Secret Formula </string>
+	</dict>
+	<dict>
+		<key>itemName</key>
+		<string>The Dirty Bubble</string>
+		<key>price</key>
+		<integer>60</integer>
+		<key>rarity</key>
+		<string>Rare</string>
+		<key>description</key>
+		<string>The Dirty Bubble is one of Mermaid Man and Barnacle Boy&apos;s archenemies alongside Man Ray.</string>
+	</dict>
+	<dict>
+		<key>itemName</key>
+		<string>Old Man Jenkins</string>
+		<key>price</key>
+		<integer>10</integer>
+		<key>rarity</key>
+		<string>Common</string>
+		<key>description</key>
+		<string>Old Man Jenkins is an elderly fish who lives in Bikini Bottom</string>
+	</dict>
+	<dict>
+		<key>itemName</key>
+		<string>Squidward Tentacles</string>
+		<key>price</key>
+		<integer>60</integer>
+		<key>rarity</key>
+		<string>Rare</string>
+		<key>description</key>
+		<string>Squidward Tentancles is an octopus who lives in a Moai alongside Spongebob Squarepants and Patrick Star. He is employed at the Krusty Krab restaurant by Mr Krabs, his boss. He often plays the clarinet.</string>
+	</dict>
+</array>
+</plist>

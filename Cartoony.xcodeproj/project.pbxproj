@@ -1,0 +1,493 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB07052B240E84A000904AD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB07052A240E84A000904AD9 /* AppDelegate.swift */; };
+		CB07052D240E84A000904AD9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB07052C240E84A000904AD9 /* SceneDelegate.swift */; };
+		CB070532240E84A000904AD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB070530240E84A000904AD9 /* Main.storyboard */; };
+		CB070534240E84A100904AD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB070533240E84A100904AD9 /* Assets.xcassets */; };
+		CB070537240E84A100904AD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB070535240E84A100904AD9 /* LaunchScreen.storyboard */; };
+		CB070541240E88C600904AD9 /* CartoonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB070540240E88C600904AD9 /* CartoonViewController.swift */; };
+		CB070543240EA0A000904AD9 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB070542240EA0A000904AD9 /* ShopViewController.swift */; };
+		CB070545240EA37B00904AD9 /* ShopItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB070544240EA37B00904AD9 /* ShopItemCell.swift */; };
+		CB070547240FB45000904AD9 /* CartoonProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB070546240FB45000904AD9 /* CartoonProfileCell.swift */; };
+		CB07054D241263AC00904AD9 /* ShopItemModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB07054C241263AC00904AD9 /* ShopItemModalViewController.swift */; };
+		CB4CC1DD2422162500147C88 /* Cartoons.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB4CC1DC2422162500147C88 /* Cartoons.plist */; };
+		CB4CC1DF242223C500147C88 /* Cartoon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4CC1DE242223C500147C88 /* Cartoon.swift */; };
+		CB4CC1E1242224E400147C88 /* CartoonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4CC1E0242224E400147C88 /* CartoonManager.swift */; };
+		CB4CC1E5242241B200147C88 /* ShowsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4CC1E4242241B200147C88 /* ShowsViewController.swift */; };
+		CB4CC1E72422423E00147C88 /* ShowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4CC1E62422423E00147C88 /* ShowCell.swift */; };
+		CB4CC1ED24224C5000147C88 /* Shows.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB4CC1EC24224C5000147C88 /* Shows.plist */; };
+		CB4CC1EF2422674F00147C88 /* Show.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4CC1EE2422674F00147C88 /* Show.swift */; };
+		CB4CC1F12422682600147C88 /* ShowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4CC1F02422682600147C88 /* ShowManager.swift */; };
+		CB5A0B992420D87A00B6E3AB /* ShopInventory.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB5A0B982420D87A00B6E3AB /* ShopInventory.plist */; };
+		CB5A0B9B2420E39600B6E3AB /* ShopInventoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5A0B9A2420E39600B6E3AB /* ShopInventoryManager.swift */; };
+		CB5A0B9D2420E3F700B6E3AB /* ShopItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5A0B9C2420E3F700B6E3AB /* ShopItem.swift */; };
+		CB6645C824167B4500B82A43 /* RarityType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6645C724167B4500B82A43 /* RarityType.swift */; };
+		CBC94320243746E600B01334 /* UIRarityButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC9431F243746E600B01334 /* UIRarityButton.swift */; };
+		CBC943232437526200B01334 /* CartoonProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC943222437526200B01334 /* CartoonProfileViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CB070527240E84A000904AD9 /* Cartoony.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cartoony.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB07052A240E84A000904AD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CB07052C240E84A000904AD9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CB070531240E84A000904AD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CB070533240E84A100904AD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB070536240E84A100904AD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CB070538240E84A100904AD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB070540240E88C600904AD9 /* CartoonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartoonViewController.swift; sourceTree = "<group>"; };
+		CB070542240EA0A000904AD9 /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
+		CB070544240EA37B00904AD9 /* ShopItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopItemCell.swift; sourceTree = "<group>"; };
+		CB070546240FB45000904AD9 /* CartoonProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartoonProfileCell.swift; sourceTree = "<group>"; };
+		CB07054C241263AC00904AD9 /* ShopItemModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopItemModalViewController.swift; sourceTree = "<group>"; };
+		CB4CC1DC2422162500147C88 /* Cartoons.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Cartoons.plist; sourceTree = "<group>"; };
+		CB4CC1DE242223C500147C88 /* Cartoon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cartoon.swift; sourceTree = "<group>"; };
+		CB4CC1E0242224E400147C88 /* CartoonManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartoonManager.swift; sourceTree = "<group>"; };
+		CB4CC1E4242241B200147C88 /* ShowsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsViewController.swift; sourceTree = "<group>"; };
+		CB4CC1E62422423E00147C88 /* ShowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowCell.swift; sourceTree = "<group>"; };
+		CB4CC1EC24224C5000147C88 /* Shows.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Shows.plist; sourceTree = "<group>"; };
+		CB4CC1EE2422674F00147C88 /* Show.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Show.swift; sourceTree = "<group>"; };
+		CB4CC1F02422682600147C88 /* ShowManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowManager.swift; sourceTree = "<group>"; };
+		CB5A0B982420D87A00B6E3AB /* ShopInventory.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ShopInventory.plist; sourceTree = "<group>"; };
+		CB5A0B9A2420E39600B6E3AB /* ShopInventoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopInventoryManager.swift; sourceTree = "<group>"; };
+		CB5A0B9C2420E3F700B6E3AB /* ShopItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopItem.swift; sourceTree = "<group>"; };
+		CB6645C724167B4500B82A43 /* RarityType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RarityType.swift; sourceTree = "<group>"; };
+		CBC9431F243746E600B01334 /* UIRarityButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIRarityButton.swift; sourceTree = "<group>"; };
+		CBC943222437526200B01334 /* CartoonProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartoonProfileViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB070524240E84A000904AD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB07051E240E84A000904AD9 = {
+			isa = PBXGroup;
+			children = (
+				CB070529240E84A000904AD9 /* Cartoony */,
+				CB070528240E84A000904AD9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CB070528240E84A000904AD9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB070527240E84A000904AD9 /* Cartoony.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB070529240E84A000904AD9 /* Cartoony */ = {
+			isa = PBXGroup;
+			children = (
+				CBC9432124374E2500B01334 /* Rarity */,
+				CB4CC1F2242279A700147C88 /* Show */,
+				CB5A0B932420D78700B6E3AB /* Cartoon */,
+				CB5A0B942420D79800B6E3AB /* Shop */,
+				CB07052A240E84A000904AD9 /* AppDelegate.swift */,
+				CB07052C240E84A000904AD9 /* SceneDelegate.swift */,
+				CB070530240E84A000904AD9 /* Main.storyboard */,
+				CB070533240E84A100904AD9 /* Assets.xcassets */,
+				CB070535240E84A100904AD9 /* LaunchScreen.storyboard */,
+				CB070538240E84A100904AD9 /* Info.plist */,
+			);
+			path = Cartoony;
+			sourceTree = "<group>";
+		};
+		CB4CC1DB242215C400147C88 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CB4CC1DC2422162500147C88 /* Cartoons.plist */,
+				CB4CC1DE242223C500147C88 /* Cartoon.swift */,
+				CB4CC1E0242224E400147C88 /* CartoonManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CB4CC1F2242279A700147C88 /* Show */ = {
+			isa = PBXGroup;
+			children = (
+				CB4CC1F3242279C800147C88 /* View */,
+				CB4CC1F4242279D800147C88 /* Model */,
+			);
+			path = Show;
+			sourceTree = "<group>";
+		};
+		CB4CC1F3242279C800147C88 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CB4CC1E4242241B200147C88 /* ShowsViewController.swift */,
+				CB4CC1E62422423E00147C88 /* ShowCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CB4CC1F4242279D800147C88 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CB4CC1EC24224C5000147C88 /* Shows.plist */,
+				CB4CC1EE2422674F00147C88 /* Show.swift */,
+				CB4CC1F02422682600147C88 /* ShowManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CB5A0B932420D78700B6E3AB /* Cartoon */ = {
+			isa = PBXGroup;
+			children = (
+				CB5A0B9F2420E79C00B6E3AB /* View */,
+				CB4CC1DB242215C400147C88 /* Model */,
+			);
+			path = Cartoon;
+			sourceTree = "<group>";
+		};
+		CB5A0B942420D79800B6E3AB /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				CB5A0B9E2420E77C00B6E3AB /* View */,
+				CB5A0B952420D80F00B6E3AB /* Model */,
+			);
+			path = Shop;
+			sourceTree = "<group>";
+		};
+		CB5A0B952420D80F00B6E3AB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CB5A0B982420D87A00B6E3AB /* ShopInventory.plist */,
+				CB5A0B9A2420E39600B6E3AB /* ShopInventoryManager.swift */,
+				CB5A0B9C2420E3F700B6E3AB /* ShopItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CB5A0B9E2420E77C00B6E3AB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CB070542240EA0A000904AD9 /* ShopViewController.swift */,
+				CB070544240EA37B00904AD9 /* ShopItemCell.swift */,
+				CB07054C241263AC00904AD9 /* ShopItemModalViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CB5A0B9F2420E79C00B6E3AB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CB070540240E88C600904AD9 /* CartoonViewController.swift */,
+				CB070546240FB45000904AD9 /* CartoonProfileCell.swift */,
+				CBC943222437526200B01334 /* CartoonProfileViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CBC9432124374E2500B01334 /* Rarity */ = {
+			isa = PBXGroup;
+			children = (
+				CBC9431F243746E600B01334 /* UIRarityButton.swift */,
+				CB6645C724167B4500B82A43 /* RarityType.swift */,
+			);
+			path = Rarity;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB070526240E84A000904AD9 /* Cartoony */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB07053B240E84A100904AD9 /* Build configuration list for PBXNativeTarget "Cartoony" */;
+			buildPhases = (
+				CB070523240E84A000904AD9 /* Sources */,
+				CB070524240E84A000904AD9 /* Frameworks */,
+				CB070525240E84A000904AD9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cartoony;
+			productName = Cartoony;
+			productReference = CB070527240E84A000904AD9 /* Cartoony.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB07051F240E84A000904AD9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Nathan;
+				TargetAttributes = {
+					CB070526240E84A000904AD9 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = CB070522240E84A000904AD9 /* Build configuration list for PBXProject "Cartoony" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB07051E240E84A000904AD9;
+			productRefGroup = CB070528240E84A000904AD9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB070526240E84A000904AD9 /* Cartoony */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB070525240E84A000904AD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB070537240E84A100904AD9 /* LaunchScreen.storyboard in Resources */,
+				CB4CC1ED24224C5000147C88 /* Shows.plist in Resources */,
+				CB5A0B992420D87A00B6E3AB /* ShopInventory.plist in Resources */,
+				CB070534240E84A100904AD9 /* Assets.xcassets in Resources */,
+				CB4CC1DD2422162500147C88 /* Cartoons.plist in Resources */,
+				CB070532240E84A000904AD9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB070523240E84A000904AD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB4CC1DF242223C500147C88 /* Cartoon.swift in Sources */,
+				CB6645C824167B4500B82A43 /* RarityType.swift in Sources */,
+				CB070547240FB45000904AD9 /* CartoonProfileCell.swift in Sources */,
+				CB4CC1EF2422674F00147C88 /* Show.swift in Sources */,
+				CB5A0B9D2420E3F700B6E3AB /* ShopItem.swift in Sources */,
+				CB4CC1E1242224E400147C88 /* CartoonManager.swift in Sources */,
+				CB07052B240E84A000904AD9 /* AppDelegate.swift in Sources */,
+				CBC943232437526200B01334 /* CartoonProfileViewController.swift in Sources */,
+				CB4CC1E5242241B200147C88 /* ShowsViewController.swift in Sources */,
+				CB4CC1F12422682600147C88 /* ShowManager.swift in Sources */,
+				CB07054D241263AC00904AD9 /* ShopItemModalViewController.swift in Sources */,
+				CB070545240EA37B00904AD9 /* ShopItemCell.swift in Sources */,
+				CB070543240EA0A000904AD9 /* ShopViewController.swift in Sources */,
+				CB4CC1E72422423E00147C88 /* ShowCell.swift in Sources */,
+				CB07052D240E84A000904AD9 /* SceneDelegate.swift in Sources */,
+				CB5A0B9B2420E39600B6E3AB /* ShopInventoryManager.swift in Sources */,
+				CBC94320243746E600B01334 /* UIRarityButton.swift in Sources */,
+				CB070541240E88C600904AD9 /* CartoonViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CB070530240E84A000904AD9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB070531240E84A000904AD9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CB070535240E84A100904AD9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB070536240E84A100904AD9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CB070539240E84A100904AD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CB07053A240E84A100904AD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB07053C240E84A100904AD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Cartoony/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nathan.Cartoony;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CB07053D240E84A100904AD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Cartoony/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nathan.Cartoony;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB070522240E84A000904AD9 /* Build configuration list for PBXProject "Cartoony" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB070539240E84A100904AD9 /* Debug */,
+				CB07053A240E84A100904AD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB07053B240E84A100904AD9 /* Build configuration list for PBXNativeTarget "Cartoony" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB07053C240E84A100904AD9 /* Debug */,
+				CB07053D240E84A100904AD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CB07051F240E84A000904AD9 /* Project object */;
+}
