@@ -14,9 +14,9 @@ class ShopItemCell: UITableViewCell {
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var rarityLabel: UILabel!
     
-    func setUpShopItemCell(title: String, rarity: String, price: Int) {
+    func setUpShopItemCell(title: String, rarity: RarityType, price: Int) {
         titleLabel.text = title
-        rarityLabel.text = rarity
+        rarityLabel.text = rarity.rawValue
         priceLabel.text = "\(price) coins"
     }
     

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CartoonViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+class CartoonViewController: UIViewController {
 
     @IBOutlet weak var searchBar: UISearchBar!
     //MARK: Outlets
@@ -45,6 +45,18 @@ class CartoonViewController: UIViewController, UICollectionViewDataSource, UICol
         cartoonManager.fetch()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "openCartoonProfileView" {
+            if let vc = segue.destination as? CartoonProfileViewController, let cartoon = selectedCartoon {
+                vc.cartoon = cartoon
+            }
+        }
+    }
+    
+}
+
+extension CartoonViewController: UICollectionViewDataSource {
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         cartoonManager.numberOfCartoons()
     }
@@ -59,21 +71,15 @@ class CartoonViewController: UIViewController, UICollectionViewDataSource, UICol
         
         return cell
     }
+}
+
+extension CartoonViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
 
         selectedCartoon = cartoonManager.cartoon(at: indexPath)
     }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "openCartoonProfileView" {
-            if let vc = segue.destination as? CartoonProfileViewController, let cartoon = selectedCartoon {
-                vc.cartoon = cartoon
-            }
-        }
-    }
-    
 }
 
 extension CartoonViewController: UISearchBarDelegate {
@@ -81,10 +87,6 @@ extension CartoonViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         cartoonManager.filter(bySearch: searchText, selectedRarity: selectedRarity)
         reloadCollectionWithAnimation()
-    }
-    
-    func clearSearch() {
-        searchBar.text = ""
     }
     
 }
@@ -106,6 +108,10 @@ extension CartoonViewController {
         collectionView.performBatchUpdates({
             collectionView.reloadSections([0])
         }, completion: nil)
+    }
+    
+    fileprivate func clearSearch() {
+        searchBar.text = ""
     }
     
 }

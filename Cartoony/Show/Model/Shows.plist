@@ -5,58 +5,74 @@
 	<dict>
 		<key>name</key>
 		<string>Spongebob Squarepants</string>
+		<key>key</key>
+		<string>spongebobSquarepants</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>The Simpsons</string>
+		<key>key</key>
+		<string>theSimpsons</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>Tom and Jerry</string>
+		<key>key</key>
+		<string>tomAndJerry</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>Johnny Test</string>
+		<key>key</key>
+		<string>johnnyTest</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>Ben 10</string>
+		<key>key</key>
+		<string>benTen</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>Ed, Edd n Eddy</string>
+		<key>key</key>
+		<string>edEddEddy</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>Scooby-Doo, Where Are You!</string>
+		<key>key</key>
+		<string>scoobyDooWhereAreYou</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>Adventure Time</string>
+		<key>key</key>
+		<string>adventureTime</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>The Amazing World of Gumball</string>
-	</dict>
-	<dict>
-		<key>name</key>
-		<string>The Powerpuff Girls</string>
-	</dict>
-	<dict>
-		<key>name</key>
-		<string>Dexter&apos;s Labratory</string>
+		<key>key</key>
+		<string>theAmazingWorldOfGumball</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>Kung Fu Panda: Legends of Awesomeness</string>
+		<key>key</key>
+		<string>kungFuPandaAwesomeness</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>Rise of the Teenage Mutant Ninja Turtles</string>
+		<key>key</key>
+		<string>teenageMutantNinjaTurtles</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>Chowder</string>
+		<key>key</key>
+		<string>chowder</string>
 	</dict>
 </array>
 </plist>

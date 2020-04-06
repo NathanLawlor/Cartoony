@@ -10,10 +10,12 @@ import Foundation
 
 struct Show {
     var name: String
+    var key: String
 }
 
 extension Show {
     init(dict:[String:AnyObject]) {
-        self.name = dict["name"] as! String
+        self.name = dict["name"] as? String ?? ""
+        self.key = dict["key"] as? String ?? ""
     }
 }

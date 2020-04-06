@@ -16,9 +16,9 @@ struct Cartoon {
 
 extension Cartoon {
     init(dict:[String:AnyObject]) {
-        self.name = dict["name"] as! String
-        let rarityValue = dict["rarity"] as! String
+        self.name = dict["name"] as? String ?? ""
+        let rarityValue = dict["rarity"] as? String ?? ""
         self.rarity = RarityType(rawValue: rarityValue) ?? .unknown
-        self.imageAsset = dict["imageAsset"] as! String
+        self.imageAsset = dict["imageAsset"] as? String ?? ""
     }
 }

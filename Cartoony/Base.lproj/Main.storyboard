@@ -38,9 +38,8 @@
                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rarity" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iPP-eg-8As">
-                                                    <rect key="frame" x="100" y="65" width="80" height="25"/>
+                                                    <rect key="frame" x="100" y="65" width="94" height="25"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="iFf-2a-Nwj"/>
                                                         <constraint firstAttribute="height" constant="25" id="otV-id-sCy"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="18"/>
@@ -62,9 +61,8 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shop Item Price" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xvn-Cc-U37">
-                                                    <rect key="frame" x="266.5" y="65" width="137.5" height="25"/>
+                                                    <rect key="frame" x="267" y="65" width="137" height="25"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="IVj-7t-liz"/>
                                                         <constraint firstAttribute="height" constant="25" id="PRm-do-WtX"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="AmericanTypewriter-Semibold" family="American Typewriter" pointSize="18"/>
@@ -79,10 +77,12 @@
                                                 <constraint firstAttribute="bottomMargin" secondItem="xvn-Cc-U37" secondAttribute="bottom" constant="-1" id="Hkk-Nz-OmE"/>
                                                 <constraint firstItem="OXg-cB-Ngh" firstAttribute="leading" secondItem="XVx-G6-Ios" secondAttribute="trailing" constant="10" id="aZK-2t-v34"/>
                                                 <constraint firstAttribute="bottom" secondItem="iPP-eg-8As" secondAttribute="bottom" constant="10" id="f2n-Vf-sU9"/>
+                                                <constraint firstAttribute="trailing" secondItem="iPP-eg-8As" secondAttribute="trailing" constant="220" id="kFa-SC-W2F"/>
                                                 <constraint firstItem="XVx-G6-Ios" firstAttribute="leading" secondItem="GHu-Sl-1u3" secondAttribute="leading" constant="10" id="oX7-hR-4um"/>
                                                 <constraint firstItem="XVx-G6-Ios" firstAttribute="top" secondItem="GHu-Sl-1u3" secondAttribute="top" constant="10" id="pYI-e3-kxk"/>
                                                 <constraint firstItem="OXg-cB-Ngh" firstAttribute="top" secondItem="GHu-Sl-1u3" secondAttribute="top" constant="10" id="tmL-bc-q4k"/>
                                                 <constraint firstAttribute="bottom" secondItem="XVx-G6-Ios" secondAttribute="bottom" constant="10" id="wUe-XQ-cIY"/>
+                                                <constraint firstItem="xvn-Cc-U37" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iPP-eg-8As" secondAttribute="trailing" constant="50" id="zE9-Cz-Pu4"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <inset key="separatorInset" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
@@ -359,10 +359,10 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Show Name " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HKj-HC-gzC">
-                                                    <rect key="frame" x="10" y="21" width="396" height="22"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show Name " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HKj-HC-gzC">
+                                                    <rect key="frame" x="10" y="21" width="350" height="22"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="396" id="Cyk-Sg-IaU"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="350" id="76I-oF-UNc"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                     <nil key="textColor"/>
@@ -370,9 +370,10 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottomMargin" secondItem="HKj-HC-gzC" secondAttribute="bottom" constant="10" id="72A-Kz-fbO"/>
-                                                <constraint firstItem="HKj-HC-gzC" firstAttribute="top" secondItem="kO1-PP-CIy" secondAttribute="topMargin" constant="10" id="BQe-n9-LF4"/>
-                                                <constraint firstItem="HKj-HC-gzC" firstAttribute="leading" secondItem="kO1-PP-CIy" secondAttribute="leading" constant="10" id="Mha-B8-yyH"/>
+                                                <constraint firstAttribute="bottom" secondItem="HKj-HC-gzC" secondAttribute="bottom" constant="17" id="FKH-1y-Knb"/>
+                                                <constraint firstAttribute="trailing" secondItem="HKj-HC-gzC" secondAttribute="trailing" constant="10" id="Fxw-cC-VSy"/>
+                                                <constraint firstItem="HKj-HC-gzC" firstAttribute="leading" secondItem="kO1-PP-CIy" secondAttribute="leading" constant="10" id="Ow9-Ll-zfE"/>
+                                                <constraint firstItem="HKj-HC-gzC" firstAttribute="top" secondItem="kO1-PP-CIy" secondAttribute="top" constant="21" id="bPv-nr-tVd"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>

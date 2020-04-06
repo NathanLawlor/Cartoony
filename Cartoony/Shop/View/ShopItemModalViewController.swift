@@ -20,7 +20,10 @@ class ShopItemModalViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        loadShopItem()
+    }
+    
+    func loadShopItem() {
         guard let shopItem = shopItem else {
             return
         }
@@ -29,11 +32,9 @@ class ShopItemModalViewController: UIViewController {
         itemNameLabel.text = shopItem.itemName
         descriptionLabel.text = shopItem.description
         
-        if let rarityColour = UIColor(named: shopItem.rarity) {
+        if let rarityColour = UIColor(named: shopItem.rarity.rawValue) {
             shopItemView.backgroundColor = rarityColour
         }
-        
-        
     }
 
 }

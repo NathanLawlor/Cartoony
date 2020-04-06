@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ShowsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class ShowsViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -18,6 +18,9 @@ class ShowsViewController: UIViewController, UITableViewDataSource, UITableViewD
         super.viewDidLoad()
         showManager.fetch()
     }
+}
+
+extension ShowsViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return showManager.numberOfShows()
@@ -34,10 +37,11 @@ class ShowsViewController: UIViewController, UITableViewDataSource, UITableViewD
         
         return cell
     }
+}
+
+extension ShowsViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
     }
-    
-    
 }

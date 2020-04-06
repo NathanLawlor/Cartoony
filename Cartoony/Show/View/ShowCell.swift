@@ -10,11 +10,8 @@ import UIKit
 
 class ShowCell: UITableViewCell {
     
-    //outlet
     @IBOutlet weak var nameLabel: UILabel!
     
-    
-    //setup
     func setUpShowCell(name: String) {
         nameLabel.text = name
     }
