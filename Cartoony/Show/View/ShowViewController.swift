@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ShowsViewController: UIViewController {
+class ShowViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -18,16 +18,26 @@ class ShowsViewController: UIViewController {
         super.viewDidLoad()
         showManager.fetch()
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "openShowCartoonCollection" {
+            if let vc = segue.destination as? ShowCartoonsViewController, let selectedShow = sender as? Show {
+                vc.show = selectedShow
+            } else {
+                return
+            }
+        }
+    }
 }
 
-extension ShowsViewController: UITableViewDataSource {
+extension ShowViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return showManager.numberOfShows()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "showCell") as? ShowCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "showCell") as? ShowTableCell else {
             return UITableViewCell()
         }
         
@@ -39,9 +49,12 @@ extension ShowsViewController: UITableViewDataSource {
     }
 }
 
-extension ShowsViewController: UITableViewDelegate {
+extension ShowViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        let selectedShow = showManager.show(at: indexPath)
+        performSegue(withIdentifier: "openShowCartoonCollection", sender: selectedShow)
     }
 }

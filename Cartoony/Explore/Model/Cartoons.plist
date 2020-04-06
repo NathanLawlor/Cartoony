@@ -7,6 +7,8 @@
 		<string>Jerry Mouse</string>
 		<key>rarity</key>
 		<string>Epic</string>
+		<key>showKey</key>
+		<string>tomAndJerry</string>
 		<key>imageAsset</key>
 		<string></string>
 	</dict>
@@ -15,6 +17,8 @@
 		<string>Tom Cat</string>
 		<key>rarity</key>
 		<string>Rare</string>
+		<key>showKey</key>
+		<string>tomAndJerry</string>
 		<key>imageAsset</key>
 		<string></string>
 	</dict>
@@ -23,6 +27,8 @@
 		<string>Johnny Test</string>
 		<key>rarity</key>
 		<string>Common</string>
+		<key>showKey</key>
+		<string>johnnyTest</string>
 		<key>imageAsset</key>
 		<string></string>
 	</dict>
@@ -31,6 +37,8 @@
 		<string>Jimmy Neutron</string>
 		<key>rarity</key>
 		<string>Rare</string>
+		<key>showKey</key>
+		<string></string>
 		<key>imageAsset</key>
 		<string></string>
 	</dict>
@@ -39,6 +47,8 @@
 		<string>Chowder</string>
 		<key>rarity</key>
 		<string>Common</string>
+		<key>showKey</key>
+		<string>chowder</string>
 		<key>imageAsset</key>
 		<string>chowder</string>
 	</dict>
@@ -47,6 +57,8 @@
 		<string>Schnitzel</string>
 		<key>rarity</key>
 		<string>Common</string>
+		<key>showKey</key>
+		<string>chowder</string>
 		<key>imageAsset</key>
 		<string></string>
 	</dict>
@@ -55,6 +67,8 @@
 		<string>Ben Tennyson</string>
 		<key>rarity</key>
 		<string>Epic</string>
+		<key>showKey</key>
+		<string>benTen</string>
 		<key>imageAsset</key>
 		<string></string>
 	</dict>
@@ -63,6 +77,8 @@
 		<string>Grey Matter</string>
 		<key>rarity</key>
 		<string>Rare</string>
+		<key>showKey</key>
+		<string>benTen</string>
 		<key>imageAsset</key>
 		<string>greyMatter</string>
 	</dict>
@@ -71,6 +87,8 @@
 		<string>Jake the Dog</string>
 		<key>rarity</key>
 		<string>Common</string>
+		<key>showKey</key>
+		<string>adventureTime</string>
 		<key>imageAsset</key>
 		<string></string>
 	</dict>
@@ -79,6 +97,8 @@
 		<string>Darwin Watterson</string>
 		<key>rarity</key>
 		<string>Common</string>
+		<key>showKey</key>
+		<string>theAmazingWorldOfGumball</string>
 		<key>imageAsset</key>
 		<string></string>
 	</dict>
@@ -87,6 +107,8 @@
 		<string>Scooby-Doo</string>
 		<key>rarity</key>
 		<string>Rare</string>
+		<key>showKey</key>
+		<string>scoobyDooWhereAreYou</string>
 		<key>imageAsset</key>
 		<string>scoobydoo</string>
 	</dict>
@@ -95,6 +117,8 @@
 		<string>Po</string>
 		<key>rarity</key>
 		<string>Epic</string>
+		<key>showKey</key>
+		<string>kungFuPandaAwesomeness</string>
 		<key>imageAsset</key>
 		<string></string>
 	</dict>
@@ -103,6 +127,8 @@
 		<string>Tigress</string>
 		<key>rarity</key>
 		<string>Rare</string>
+		<key>showKey</key>
+		<string>kungFuPandaAwesomeness</string>
 		<key>imageAsset</key>
 		<string></string>
 	</dict>

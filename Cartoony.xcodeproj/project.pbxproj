@@ -20,8 +20,8 @@
 		CB4CC1DD2422162500147C88 /* Cartoons.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB4CC1DC2422162500147C88 /* Cartoons.plist */; };
 		CB4CC1DF242223C500147C88 /* Cartoon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4CC1DE242223C500147C88 /* Cartoon.swift */; };
 		CB4CC1E1242224E400147C88 /* CartoonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4CC1E0242224E400147C88 /* CartoonManager.swift */; };
-		CB4CC1E5242241B200147C88 /* ShowsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4CC1E4242241B200147C88 /* ShowsViewController.swift */; };
-		CB4CC1E72422423E00147C88 /* ShowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4CC1E62422423E00147C88 /* ShowCell.swift */; };
+		CB4CC1E5242241B200147C88 /* ShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4CC1E4242241B200147C88 /* ShowViewController.swift */; };
+		CB4CC1E72422423E00147C88 /* ShowTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4CC1E62422423E00147C88 /* ShowTableCell.swift */; };
 		CB4CC1ED24224C5000147C88 /* Shows.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB4CC1EC24224C5000147C88 /* Shows.plist */; };
 		CB4CC1EF2422674F00147C88 /* Show.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4CC1EE2422674F00147C88 /* Show.swift */; };
 		CB4CC1F12422682600147C88 /* ShowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4CC1F02422682600147C88 /* ShowManager.swift */; };
@@ -31,6 +31,7 @@
 		CB6645C824167B4500B82A43 /* RarityType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6645C724167B4500B82A43 /* RarityType.swift */; };
 		CBC94320243746E600B01334 /* UIRarityButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC9431F243746E600B01334 /* UIRarityButton.swift */; };
 		CBC943232437526200B01334 /* CartoonProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC943222437526200B01334 /* CartoonProfileViewController.swift */; };
+		CBE96D71243B26C1007AE499 /* ShowCartoonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE96D70243B26C1007AE499 /* ShowCartoonsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,8 +50,8 @@
 		CB4CC1DC2422162500147C88 /* Cartoons.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Cartoons.plist; sourceTree = "<group>"; };
 		CB4CC1DE242223C500147C88 /* Cartoon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cartoon.swift; sourceTree = "<group>"; };
 		CB4CC1E0242224E400147C88 /* CartoonManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartoonManager.swift; sourceTree = "<group>"; };
-		CB4CC1E4242241B200147C88 /* ShowsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsViewController.swift; sourceTree = "<group>"; };
-		CB4CC1E62422423E00147C88 /* ShowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowCell.swift; sourceTree = "<group>"; };
+		CB4CC1E4242241B200147C88 /* ShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowViewController.swift; sourceTree = "<group>"; };
+		CB4CC1E62422423E00147C88 /* ShowTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowTableCell.swift; sourceTree = "<group>"; };
 		CB4CC1EC24224C5000147C88 /* Shows.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Shows.plist; sourceTree = "<group>"; };
 		CB4CC1EE2422674F00147C88 /* Show.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Show.swift; sourceTree = "<group>"; };
 		CB4CC1F02422682600147C88 /* ShowManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowManager.swift; sourceTree = "<group>"; };
@@ -60,6 +61,7 @@
 		CB6645C724167B4500B82A43 /* RarityType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RarityType.swift; sourceTree = "<group>"; };
 		CBC9431F243746E600B01334 /* UIRarityButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIRarityButton.swift; sourceTree = "<group>"; };
 		CBC943222437526200B01334 /* CartoonProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartoonProfileViewController.swift; sourceTree = "<group>"; };
+		CBE96D70243B26C1007AE499 /* ShowCartoonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowCartoonsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +96,7 @@
 			children = (
 				CBC9432124374E2500B01334 /* Rarity */,
 				CB4CC1F2242279A700147C88 /* Show */,
-				CB5A0B932420D78700B6E3AB /* Cartoon */,
+				CB5A0B932420D78700B6E3AB /* Explore */,
 				CB5A0B942420D79800B6E3AB /* Shop */,
 				CB07052A240E84A000904AD9 /* AppDelegate.swift */,
 				CB07052C240E84A000904AD9 /* SceneDelegate.swift */,
@@ -128,8 +130,9 @@
 		CB4CC1F3242279C800147C88 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				CB4CC1E4242241B200147C88 /* ShowsViewController.swift */,
-				CB4CC1E62422423E00147C88 /* ShowCell.swift */,
+				CB4CC1E4242241B200147C88 /* ShowViewController.swift */,
+				CB4CC1E62422423E00147C88 /* ShowTableCell.swift */,
+				CBE96D70243B26C1007AE499 /* ShowCartoonsViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -144,13 +147,13 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		CB5A0B932420D78700B6E3AB /* Cartoon */ = {
+		CB5A0B932420D78700B6E3AB /* Explore */ = {
 			isa = PBXGroup;
 			children = (
 				CB5A0B9F2420E79C00B6E3AB /* View */,
 				CB4CC1DB242215C400147C88 /* Model */,
 			);
-			path = Cartoon;
+			path = Explore;
 			sourceTree = "<group>";
 		};
 		CB5A0B942420D79800B6E3AB /* Shop */ = {
@@ -283,16 +286,17 @@
 				CB4CC1E1242224E400147C88 /* CartoonManager.swift in Sources */,
 				CB07052B240E84A000904AD9 /* AppDelegate.swift in Sources */,
 				CBC943232437526200B01334 /* CartoonProfileViewController.swift in Sources */,
-				CB4CC1E5242241B200147C88 /* ShowsViewController.swift in Sources */,
+				CB4CC1E5242241B200147C88 /* ShowViewController.swift in Sources */,
 				CB4CC1F12422682600147C88 /* ShowManager.swift in Sources */,
 				CB07054D241263AC00904AD9 /* ShopItemModalViewController.swift in Sources */,
 				CB070545240EA37B00904AD9 /* ShopItemCell.swift in Sources */,
 				CB070543240EA0A000904AD9 /* ShopViewController.swift in Sources */,
-				CB4CC1E72422423E00147C88 /* ShowCell.swift in Sources */,
+				CB4CC1E72422423E00147C88 /* ShowTableCell.swift in Sources */,
 				CB07052D240E84A000904AD9 /* SceneDelegate.swift in Sources */,
 				CB5A0B9B2420E39600B6E3AB /* ShopInventoryManager.swift in Sources */,
 				CBC94320243746E600B01334 /* UIRarityButton.swift in Sources */,
 				CB070541240E88C600904AD9 /* CartoonViewController.swift in Sources */,
+				CBE96D71243B26C1007AE499 /* ShowCartoonsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,8 +12,6 @@ class ShopViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    var selectedShopItem: ShopItem?
-    
     let shopInventoryManager = ShopInventoryManager()
     
     override func viewDidLoad() {
@@ -23,8 +21,8 @@ class ShopViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "openShopItemModalView" {
-            if let navVc = segue.destination as? UINavigationController, let vc = navVc.viewControllers.first as? ShopItemModalViewController, let shopItem = selectedShopItem {
-                vc.shopItem = shopItem
+            if let navVc = segue.destination as? UINavigationController, let vc = navVc.viewControllers.first as? ShopItemModalViewController, let selectedShopItem = sender as? ShopItem {
+                vc.shopItem = selectedShopItem
             }
         }
     }
@@ -62,8 +60,8 @@ extension ShopViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
 
-        selectedShopItem = shopInventoryManager.shopItem(at: indexPath)
+        let selectedShopItem = shopInventoryManager.shopItem(at: indexPath)
         
-        performSegue(withIdentifier: "openShopItemModalView", sender: self)
+        performSegue(withIdentifier: "openShopItemModalView", sender: selectedShopItem)
     }
 }

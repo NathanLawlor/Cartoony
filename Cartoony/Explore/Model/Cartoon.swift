@@ -11,6 +11,7 @@ import Foundation
 struct Cartoon {
     var name: String
     var rarity: RarityType
+    var showKey: String
     var imageAsset: String
 }
 
@@ -19,6 +20,7 @@ extension Cartoon {
         self.name = dict["name"] as? String ?? ""
         let rarityValue = dict["rarity"] as? String ?? ""
         self.rarity = RarityType(rawValue: rarityValue) ?? .unknown
+        self.showKey = dict["showKey"] as? String ?? ""
         self.imageAsset = dict["imageAsset"] as? String ?? ""
     }
 }
