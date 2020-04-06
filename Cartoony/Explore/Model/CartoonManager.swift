@@ -21,17 +21,20 @@ class CartoonManager {
         cartoonsCopy = cartoons
     }
     
-    func fetchCartoons(byShowKey key: String) {
-        fetch()
-        cartoons = cartoonsCopy.filter { $0.showKey == key}
-    }
-    
     func numberOfCartoons() -> Int {
         return cartoons.count
     }
     
     func cartoon(at indexPath: IndexPath) -> Cartoon {
         return cartoons[indexPath.item]
+    }
+    
+    func fetchCartoons(byShowKey key: String) {
+        cartoons = cartoonsCopy.filter { $0.showKey == key}
+    }
+    
+    func numberOfCartoons(inShow showKey: String) -> Int {
+        return cartoonsCopy.filter { $0.showKey == showKey }.count
     }
     
     fileprivate func loadData() -> [[String: AnyObject]] {

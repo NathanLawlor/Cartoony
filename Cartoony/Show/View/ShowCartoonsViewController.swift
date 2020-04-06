@@ -8,7 +8,33 @@
 
 import UIKit
 
-class ShowCartoonsViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+class ShowCartoonsViewController: UIViewController {
+    
+    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var showNameLabel: UILabel!
+    
+    let cartoonManager = CartoonManager()
+    var show: Show?
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        cartoonManager.fetch()
+        
+        setupView()
+    }
+    
+    func setupView() {
+        guard let show = show else {
+            return
+        }
+        
+        showNameLabel.text = show.name
+        
+        cartoonManager.fetchCartoons(byShowKey: show.key)
+    }
+}
+
+extension ShowCartoonsViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         cartoonManager.numberOfCartoons()
@@ -24,27 +50,8 @@ class ShowCartoonsViewController: UIViewController, UICollectionViewDataSource, 
         
         return cell
     }
+}
+
+extension ShowCartoonsViewController: UICollectionViewDelegate {
     
-    
-    @IBOutlet weak var collectionView: UICollectionView!
-    @IBOutlet weak var showNameLabel: UILabel!
-    
-    let cartoonManager = CartoonManager()
-    
-    var show: Show?
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        setupView()
-    }
-    
-    func setupView() {
-        guard let show = show else {
-            return
-        }
-        
-        showNameLabel.text = show.name
-        
-        cartoonManager.fetchCartoons(byShowKey: show.key)
-    }
 }

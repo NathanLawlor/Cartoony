@@ -13,10 +13,12 @@ class ShowViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     let showManager = ShowManager()
+    let cartoonManager = CartoonManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         showManager.fetch()
+        cartoonManager.fetch()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -43,6 +45,15 @@ extension ShowViewController: UITableViewDataSource {
         cell.setUpShowCell(show: show)
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        let show = showManager.show(at: indexPath)
+        
+        if cartoonManager.numberOfCartoons(inShow: show.key) <= 0 {
+            return CGFloat(0.0)
+        }
+        return CGFloat(60.0)
     }
 }
 
