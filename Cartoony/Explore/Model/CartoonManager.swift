@@ -21,6 +21,11 @@ class CartoonManager {
         cartoonsCopy = cartoons
     }
     
+    func fetchCartoons(byShowKey key: String) {
+        fetch()
+        cartoons = cartoonsCopy.filter { $0.showKey == key}
+    }
+    
     func numberOfCartoons() -> Int {
         return cartoons.count
     }

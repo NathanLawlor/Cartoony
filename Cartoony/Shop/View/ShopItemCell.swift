@@ -14,10 +14,12 @@ class ShopItemCell: UITableViewCell {
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var rarityLabel: UILabel!
     
-    func setUpShopItemCell(title: String, rarity: RarityType, price: Int) {
-        titleLabel.text = title
-        rarityLabel.text = rarity.rawValue
-        priceLabel.text = "\(price) coins"
+    func setUpShopItemCell(shopItem: ShopItem) {
+        titleLabel.text = shopItem.itemName
+        rarityLabel.text = shopItem.rarity.rawValue
+        priceLabel.text = "\(shopItem.price) coins"
+        
+        self.backgroundColor = UIColor(named: shopItem.rarity.rawValue)
     }
     
 }

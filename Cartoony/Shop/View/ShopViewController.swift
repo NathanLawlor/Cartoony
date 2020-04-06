@@ -45,12 +45,7 @@ extension ShopViewController: UITableViewDataSource {
         }
         
         let shopItem = shopInventoryManager.shopItem(at: indexPath)
-        
-        cell.setUpShopItemCell(title: shopItem.itemName, rarity: shopItem.rarity, price: shopItem.price)
-        
-        if let rarityColour = UIColor(named: shopItem.rarity.rawValue) {
-            cell.backgroundColor = rarityColour
-        }
+        cell.setUpShopItemCell(shopItem: shopItem)
         
         return cell
     }
@@ -61,7 +56,6 @@ extension ShopViewController: UITableViewDelegate {
         tableView.deselectRow(at: indexPath, animated: true)
 
         let selectedShopItem = shopInventoryManager.shopItem(at: indexPath)
-        
         performSegue(withIdentifier: "openShopItemModalView", sender: selectedShopItem)
     }
 }

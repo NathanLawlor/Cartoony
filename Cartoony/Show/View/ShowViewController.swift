@@ -23,8 +23,6 @@ class ShowViewController: UIViewController {
         if segue.identifier == "openShowCartoonCollection" {
             if let vc = segue.destination as? ShowCartoonsViewController, let selectedShow = sender as? Show {
                 vc.show = selectedShow
-            } else {
-                return
             }
         }
     }
@@ -37,13 +35,12 @@ extension ShowViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "showCell") as? ShowTableCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "showTableCell") as? ShowTableCell else {
             return UITableViewCell()
         }
         
         let show = showManager.show(at: indexPath)
-        
-        cell.setUpShowCell(name: show.name)
+        cell.setUpShowCell(show: show)
         
         return cell
     }

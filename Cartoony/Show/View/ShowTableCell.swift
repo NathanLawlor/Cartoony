@@ -12,8 +12,8 @@ class ShowTableCell: UITableViewCell {
     
     @IBOutlet weak var nameLabel: UILabel!
     
-    func setUpShowCell(name: String) {
-        nameLabel.text = name
+    func setUpShowCell(show: Show) {
+        nameLabel.text = show.name
     }
     
 }

@@ -8,19 +8,43 @@
 
 import UIKit
 
-class ShowCartoonsViewController: UIViewController {
+class ShowCartoonsViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        cartoonManager.numberOfCartoons()
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "showCartoonProfileCell", for: indexPath) as? CartoonProfileCell else {
+            return UICollectionViewCell()
+        }
+        
+        let cartoon = cartoonManager.cartoon(at: indexPath)
+        cell.setUpCartoonProfileCell(cartoon: cartoon)
+        
+        return cell
+    }
+    
+    
+    @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var showNameLabel: UILabel!
+    
+    let cartoonManager = CartoonManager()
     
     var show: Show?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setupView()
+    }
+    
+    func setupView() {
         guard let show = show else {
             return
         }
         
         showNameLabel.text = show.name
+        
+        cartoonManager.fetchCartoons(byShowKey: show.key)
     }
 }
