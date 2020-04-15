@@ -1,5 +1,5 @@
 //
-//  CartoonProfileCell.swift
+//  CartoonProfileCollectionViewCell.swift
 //  Cartoony
 //
 //  Created by Nathan on 04/03/2020.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CartoonProfileCell: UICollectionViewCell {
+class CartoonProfileCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!

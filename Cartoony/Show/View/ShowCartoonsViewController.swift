@@ -10,7 +10,11 @@ import UIKit
 
 class ShowCartoonsViewController: UIViewController {
     
-    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var collectionView: UICollectionView! {
+        didSet {
+            collectionView.register(UINib(nibName: "CartoonProfileCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "CartoonProfileCollectionViewCell")
+        }
+    }
     @IBOutlet weak var showNameLabel: UILabel!
     
     let cartoonManager = CartoonManager()
@@ -18,6 +22,7 @@ class ShowCartoonsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         cartoonManager.fetch()
         
         setupView()
@@ -41,7 +46,7 @@ extension ShowCartoonsViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "showCartoonProfileCell", for: indexPath) as? CartoonProfileCell else {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CartoonProfileCollectionViewCell", for: indexPath) as? CartoonProfileCollectionViewCell else {
             return UICollectionViewCell()
         }
         

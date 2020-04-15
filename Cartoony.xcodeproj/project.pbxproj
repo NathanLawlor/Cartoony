@@ -15,7 +15,7 @@
 		CB070541240E88C600904AD9 /* CartoonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB070540240E88C600904AD9 /* CartoonViewController.swift */; };
 		CB070543240EA0A000904AD9 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB070542240EA0A000904AD9 /* ShopViewController.swift */; };
 		CB070545240EA37B00904AD9 /* ShopItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB070544240EA37B00904AD9 /* ShopItemCell.swift */; };
-		CB070547240FB45000904AD9 /* CartoonProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB070546240FB45000904AD9 /* CartoonProfileCell.swift */; };
+		CB070547240FB45000904AD9 /* CartoonProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB070546240FB45000904AD9 /* CartoonProfileCollectionViewCell.swift */; };
 		CB07054D241263AC00904AD9 /* ShopItemModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB07054C241263AC00904AD9 /* ShopItemModalViewController.swift */; };
 		CB4CC1DD2422162500147C88 /* Cartoons.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB4CC1DC2422162500147C88 /* Cartoons.plist */; };
 		CB4CC1DF242223C500147C88 /* Cartoon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4CC1DE242223C500147C88 /* Cartoon.swift */; };
@@ -32,6 +32,7 @@
 		CBC94320243746E600B01334 /* UIRarityButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC9431F243746E600B01334 /* UIRarityButton.swift */; };
 		CBC943232437526200B01334 /* CartoonProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC943222437526200B01334 /* CartoonProfileViewController.swift */; };
 		CBE96D71243B26C1007AE499 /* ShowCartoonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE96D70243B26C1007AE499 /* ShowCartoonsViewController.swift */; };
+		CBE96D74244727A4007AE499 /* CartoonProfileCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBE96D73244727A4007AE499 /* CartoonProfileCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,7 +46,7 @@
 		CB070540240E88C600904AD9 /* CartoonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartoonViewController.swift; sourceTree = "<group>"; };
 		CB070542240EA0A000904AD9 /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
 		CB070544240EA37B00904AD9 /* ShopItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopItemCell.swift; sourceTree = "<group>"; };
-		CB070546240FB45000904AD9 /* CartoonProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartoonProfileCell.swift; sourceTree = "<group>"; };
+		CB070546240FB45000904AD9 /* CartoonProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartoonProfileCollectionViewCell.swift; sourceTree = "<group>"; };
 		CB07054C241263AC00904AD9 /* ShopItemModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopItemModalViewController.swift; sourceTree = "<group>"; };
 		CB4CC1DC2422162500147C88 /* Cartoons.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Cartoons.plist; sourceTree = "<group>"; };
 		CB4CC1DE242223C500147C88 /* Cartoon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cartoon.swift; sourceTree = "<group>"; };
@@ -62,6 +63,7 @@
 		CBC9431F243746E600B01334 /* UIRarityButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIRarityButton.swift; sourceTree = "<group>"; };
 		CBC943222437526200B01334 /* CartoonProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartoonProfileViewController.swift; sourceTree = "<group>"; };
 		CBE96D70243B26C1007AE499 /* ShowCartoonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowCartoonsViewController.swift; sourceTree = "<group>"; };
+		CBE96D73244727A4007AE499 /* CartoonProfileCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartoonProfileCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 		CB070529240E84A000904AD9 /* Cartoony */ = {
 			isa = PBXGroup;
 			children = (
+				CBE96D7224472729007AE499 /* Cartoon */,
 				CBC9432124374E2500B01334 /* Rarity */,
 				CB4CC1F2242279A700147C88 /* Show */,
 				CB5A0B932420D78700B6E3AB /* Explore */,
@@ -189,7 +192,6 @@
 			isa = PBXGroup;
 			children = (
 				CB070540240E88C600904AD9 /* CartoonViewController.swift */,
-				CB070546240FB45000904AD9 /* CartoonProfileCell.swift */,
 				CBC943222437526200B01334 /* CartoonProfileViewController.swift */,
 			);
 			path = View;
@@ -202,6 +204,15 @@
 				CB6645C724167B4500B82A43 /* RarityType.swift */,
 			);
 			path = Rarity;
+			sourceTree = "<group>";
+		};
+		CBE96D7224472729007AE499 /* Cartoon */ = {
+			isa = PBXGroup;
+			children = (
+				CB070546240FB45000904AD9 /* CartoonProfileCollectionViewCell.swift */,
+				CBE96D73244727A4007AE499 /* CartoonProfileCollectionViewCell.xib */,
+			);
+			path = Cartoon;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +273,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBE96D74244727A4007AE499 /* CartoonProfileCollectionViewCell.xib in Resources */,
 				CB070537240E84A100904AD9 /* LaunchScreen.storyboard in Resources */,
 				CB4CC1ED24224C5000147C88 /* Shows.plist in Resources */,
 				CB5A0B992420D87A00B6E3AB /* ShopInventory.plist in Resources */,
@@ -280,7 +292,7 @@
 			files = (
 				CB4CC1DF242223C500147C88 /* Cartoon.swift in Sources */,
 				CB6645C824167B4500B82A43 /* RarityType.swift in Sources */,
-				CB070547240FB45000904AD9 /* CartoonProfileCell.swift in Sources */,
+				CB070547240FB45000904AD9 /* CartoonProfileCollectionViewCell.swift in Sources */,
 				CB4CC1EF2422674F00147C88 /* Show.swift in Sources */,
 				CB5A0B9D2420E3F700B6E3AB /* ShopItem.swift in Sources */,
 				CB4CC1E1242224E400147C88 /* CartoonManager.swift in Sources */,

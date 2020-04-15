@@ -12,7 +12,11 @@ class CartoonViewController: UIViewController {
 
     @IBOutlet weak var searchBar: UISearchBar!
     //MARK: Outlets
-    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var collectionView: UICollectionView! {
+        didSet {
+            collectionView.register(UINib(nibName: "CartoonProfileCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "CartoonProfileCollectionViewCell")
+        }
+    }
     @IBOutlet weak var commonRarityButton: UIRarityButton! {
         didSet {
             commonRarityButton.rarity = .common
@@ -62,7 +66,7 @@ extension CartoonViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cartoonProfileCell", for: indexPath) as? CartoonProfileCell else {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CartoonProfileCollectionViewCell", for: indexPath) as? CartoonProfileCollectionViewCell else {
             return UICollectionViewCell()
         }
         
