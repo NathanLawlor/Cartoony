@@ -19,7 +19,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lvI-YD-8nk">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="secondarySystemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.16" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="shopItemCell" rowHeight="100" id="ogZ-IW-ZzE" customClass="ShopItemCell" customModule="Cartoony" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="100"/>
@@ -116,7 +116,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OiE-2m-iAE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1776.8115942028987" y="187.5"/>
+            <point key="canvasLocation" x="1777" y="246"/>
         </scene>
         <!--Explore-->
         <scene sceneID="0BT-x7-ajA">
@@ -177,7 +177,7 @@
                                         <connections>
                                             <outlet property="nameLabel" destination="i0L-BX-kkc" id="gEn-qZ-dV9"/>
                                             <outlet property="profileImage" destination="QU9-2Y-H3f" id="yiS-Bg-zEk"/>
-                                            <segue destination="5fr-VS-fI2" kind="show" identifier="openCartoonProfileView" id="nhn-6y-Lii"/>
+                                            <segue destination="5fr-VS-fI2" kind="presentation" identifier="openCartoonProfileView" id="nhn-6y-Lii"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -238,7 +238,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TZQ-aA-bXS" customClass="UIRarityButton" customModule="Cartoony" customModuleProvider="target">
                                         <rect key="frame" x="340" y="13.5" width="64" height="38"/>
-                                        <color key="backgroundColor" red="0.4097107197" green="0.76939731840000003" blue="0.55994838120000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" name="Green"/>
                                         <accessibility key="accessibilityConfiguration" identifier="epic"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal">
@@ -328,7 +328,7 @@
             <objects>
                 <viewController id="5fr-VS-fI2" customClass="CartoonProfileViewController" customModule="Cartoony" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iLy-lb-vz8">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="8mK-Vx-uXT"/>
@@ -347,10 +347,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LV9-UA-uPS">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LV9-UA-uPS">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="secondarySystemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.16" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="showTableCell" rowHeight="60" id="FyG-Tz-DNv" customClass="ShowTableCell" customModule="Cartoony" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="60"/>
@@ -359,13 +359,18 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show Name " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HKj-HC-gzC">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HKj-HC-gzC">
                                                     <rect key="frame" x="10" y="21" width="350" height="22"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="350" id="76I-oF-UNc"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                    <nil key="textColor"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="Show Name ">
+                                                            <attributes>
+                                                                <font key="NSFont" size="18" name="AmericanTypewriter"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -398,7 +403,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CRd-xt-tzA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1777" y="-1125"/>
+            <point key="canvasLocation" x="1777" y="-1163"/>
         </scene>
         <!--Show Cartoons View Controller-->
         <scene sceneID="6v5-ke-R3i">
@@ -472,6 +477,7 @@
                                         <connections>
                                             <outlet property="nameLabel" destination="0sI-0h-4Mb" id="bBK-Lv-u9s"/>
                                             <outlet property="profileImage" destination="AcY-eQ-kbt" id="wD1-rI-9zc"/>
+                                            <segue destination="5fr-VS-fI2" kind="presentation" identifier="openCartoonProfileView" id="UVQ-O5-KZF"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -501,7 +507,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iDM-an-djg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2711.594202898551" y="-1125"/>
+            <point key="canvasLocation" x="2712" y="-1163"/>
         </scene>
         <!--Shop Item Modal View Controller-->
         <scene sceneID="YcP-7h-RC9">
@@ -606,7 +612,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xNc-2X-36o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="ssG-VM-2Pt" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3626.0869565217395" y="187.5"/>
+            <point key="canvasLocation" x="3632" y="246"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="uRv-xL-YS9">
@@ -630,7 +636,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ELv-r4-DTU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-97" y="-153"/>
+            <point key="canvasLocation" x="-461" y="-142"/>
         </scene>
         <!--Explore-->
         <scene sceneID="BSp-qR-EjA">
@@ -673,7 +679,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gm4-qy-xlU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="866.66666666666674" y="187.5"/>
+            <point key="canvasLocation" x="867" y="246"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="97l-f5-Q9J">
@@ -691,7 +697,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vdH-9T-wGD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2715.9420289855075" y="187.5"/>
+            <point key="canvasLocation" x="2712" y="246"/>
         </scene>
         <!--Shows-->
         <scene sceneID="hqw-gT-LiI">
@@ -710,7 +716,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CG1-Zl-yUN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="866.66666666666674" y="-1125"/>
+            <point key="canvasLocation" x="867" y="-1163"/>
         </scene>
     </scenes>
     <resources>
@@ -724,8 +730,14 @@
         <namedColor name="Epic">
             <color red="0.86900001764297485" green="0.57499998807907104" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
+        <namedColor name="Green">
+            <color red="0.40784313725490196" green="0.7686274509803922" blue="0.5607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="Rare">
             <color red="1" green="0.8970000147819519" blue="0.35199999809265137" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="UVQ-O5-KZF"/>
+    </inferredMetricsTieBreakers>
 </document>

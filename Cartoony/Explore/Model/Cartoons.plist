@@ -24,6 +24,26 @@
 	</dict>
 	<dict>
 		<key>name</key>
+		<string>Spike</string>
+		<key>rarity</key>
+		<string>Common</string>
+		<key>showKey</key>
+		<string>tomAndJerry</string>
+		<key>imageAsset</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>(Baby) Nibbles Mouse</string>
+		<key>rarity</key>
+		<string>Common</string>
+		<key>showKey</key>
+		<string>tomAndJerry</string>
+		<key>imageAsset</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>name</key>
 		<string>Johnny Test</string>
 		<key>rarity</key>
 		<string>Common</string>
@@ -129,6 +149,106 @@
 		<string>Rare</string>
 		<key>showKey</key>
 		<string>kungFuPandaAwesomeness</string>
+		<key>imageAsset</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Master Oogway</string>
+		<key>rarity</key>
+		<string>Epic</string>
+		<key>showKey</key>
+		<string>kungFuPandaAwesomeness</string>
+		<key>imageAsset</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Mantis</string>
+		<key>rarity</key>
+		<string>Common</string>
+		<key>showKey</key>
+		<string>kungFuPandaAwesomeness</string>
+		<key>imageAsset</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Shaggy Rogers</string>
+		<key>rarity</key>
+		<string>Common</string>
+		<key>showKey</key>
+		<string>scoobyDooWhereAreYou</string>
+		<key>imageAsset</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Four Arms</string>
+		<key>rarity</key>
+		<string>Common</string>
+		<key>showKey</key>
+		<string>benTen</string>
+		<key>imageAsset</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Diamondhead</string>
+		<key>rarity</key>
+		<string>Rare</string>
+		<key>showKey</key>
+		<string>benTen</string>
+		<key>imageAsset</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>XLR8</string>
+		<key>rarity</key>
+		<string>Common</string>
+		<key>showKey</key>
+		<string>benTen</string>
+		<key>imageAsset</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Heatblast</string>
+		<key>rarity</key>
+		<string>Common</string>
+		<key>showKey</key>
+		<string>benTen</string>
+		<key>imageAsset</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Dukey</string>
+		<key>rarity</key>
+		<string>Common</string>
+		<key>showKey</key>
+		<string>johnnyTest</string>
+		<key>imageAsset</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Mary Test</string>
+		<key>rarity</key>
+		<string>Epic</string>
+		<key>showKey</key>
+		<string>johnnyTest</string>
+		<key>imageAsset</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Susan Test</string>
+		<key>rarity</key>
+		<string>Rare</string>
+		<key>showKey</key>
+		<string>johnnyTest</string>
 		<key>imageAsset</key>
 		<string></string>
 	</dict>
