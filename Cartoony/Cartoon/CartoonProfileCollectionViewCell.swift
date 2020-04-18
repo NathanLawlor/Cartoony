@@ -8,12 +8,24 @@
 
 import UIKit
 
+protocol CartoonProfileCollectionViewCellDelegate {
+    func segueToCartoonView()
+}
+
 class CartoonProfileCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     
-    func setUpCartoonProfileCell(cartoon: Cartoon) {
+    var delegate: CartoonProfileCollectionViewCellDelegate?
+    
+    override class func awakeFromNib() {
+        super.awakeFromNib()
+    }
+    
+    func setUp(cartoon: Cartoon, delegate: CartoonProfileCollectionViewCellDelegate ) {
+        self.delegate = delegate
+        
         nameLabel.text = cartoon.name
         
         if !cartoon.imageAsset.isEmpty {
@@ -25,6 +37,13 @@ class CartoonProfileCollectionViewCell: UICollectionViewCell {
         self.backgroundColor = UIColor(named: cartoon.rarity.rawValue)
         self.layer.cornerRadius = 10
     }
+
+    @IBAction func statsButtonPressed(_ sender: Any) {
+        delegate?.segueToCartoonView()
+    }
     
+    @IBAction func infoButtonPressed(_ sender: Any) {
+        delegate?.segueToCartoonView()
+    }
     
 }

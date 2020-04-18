@@ -13,6 +13,7 @@ struct Cartoon {
     var rarity: RarityType
     var showKey: String
     var imageAsset: String
+    var about: String
 }
 
 extension Cartoon {
@@ -22,5 +23,6 @@ extension Cartoon {
         self.rarity = RarityType(rawValue: rarityValue) ?? .unknown
         self.showKey = dict["showKey"] as? String ?? ""
         self.imageAsset = dict["imageAsset"] as? String ?? ""
+        self.about = dict["about"] as? String ?? "Default About Text"
     }
 }

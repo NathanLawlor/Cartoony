@@ -71,7 +71,7 @@ extension CartoonViewController: UICollectionViewDataSource {
         }
         
         let cartoon = cartoonManager.cartoon(at: indexPath)
-        cell.setUpCartoonProfileCell(cartoon: cartoon)
+        cell.setUp(cartoon: cartoon, delegate: self)
         
         return cell
     }
@@ -93,6 +93,13 @@ extension CartoonViewController: UISearchBarDelegate {
         reloadCollectionWithAnimation()
     }
     
+}
+
+extension CartoonViewController: CartoonProfileCollectionViewCellDelegate {
+    
+    func segueToCartoonView() {
+        performSegue(withIdentifier: "openCartoonProfileView", sender: nil)
+    }
 }
 
 extension CartoonViewController {

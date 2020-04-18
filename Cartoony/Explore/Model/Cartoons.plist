@@ -11,6 +11,8 @@
 		<string>tomAndJerry</string>
 		<key>imageAsset</key>
 		<string></string>
+		<key>about</key>
+		<string></string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -20,6 +22,8 @@
 		<key>showKey</key>
 		<string>tomAndJerry</string>
 		<key>imageAsset</key>
+		<string></string>
+		<key>about</key>
 		<string></string>
 	</dict>
 	<dict>
@@ -31,6 +35,8 @@
 		<string>tomAndJerry</string>
 		<key>imageAsset</key>
 		<string></string>
+		<key>about</key>
+		<string></string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -40,6 +46,8 @@
 		<key>showKey</key>
 		<string>tomAndJerry</string>
 		<key>imageAsset</key>
+		<string></string>
+		<key>about</key>
 		<string></string>
 	</dict>
 	<dict>
@@ -51,6 +59,8 @@
 		<string>johnnyTest</string>
 		<key>imageAsset</key>
 		<string></string>
+		<key>about</key>
+		<string></string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -60,6 +70,8 @@
 		<key>showKey</key>
 		<string></string>
 		<key>imageAsset</key>
+		<string></string>
+		<key>about</key>
 		<string></string>
 	</dict>
 	<dict>
@@ -71,6 +83,8 @@
 		<string>chowder</string>
 		<key>imageAsset</key>
 		<string>chowder</string>
+		<key>about</key>
+		<string></string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -80,6 +94,8 @@
 		<key>showKey</key>
 		<string>chowder</string>
 		<key>imageAsset</key>
+		<string></string>
+		<key>about</key>
 		<string></string>
 	</dict>
 	<dict>
@@ -91,6 +107,8 @@
 		<string>benTen</string>
 		<key>imageAsset</key>
 		<string></string>
+		<key>about</key>
+		<string></string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -101,6 +119,8 @@
 		<string>benTen</string>
 		<key>imageAsset</key>
 		<string>greyMatter</string>
+		<key>about</key>
+		<string></string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -110,6 +130,8 @@
 		<key>showKey</key>
 		<string>adventureTime</string>
 		<key>imageAsset</key>
+		<string></string>
+		<key>about</key>
 		<string></string>
 	</dict>
 	<dict>
@@ -121,6 +143,8 @@
 		<string>theAmazingWorldOfGumball</string>
 		<key>imageAsset</key>
 		<string></string>
+		<key>about</key>
+		<string></string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -131,6 +155,8 @@
 		<string>scoobyDooWhereAreYou</string>
 		<key>imageAsset</key>
 		<string>scoobydoo</string>
+		<key>about</key>
+		<string></string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -140,6 +166,8 @@
 		<key>showKey</key>
 		<string>kungFuPandaAwesomeness</string>
 		<key>imageAsset</key>
+		<string></string>
+		<key>about</key>
 		<string></string>
 	</dict>
 	<dict>
@@ -151,6 +179,8 @@
 		<string>kungFuPandaAwesomeness</string>
 		<key>imageAsset</key>
 		<string></string>
+		<key>about</key>
+		<string></string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -160,6 +190,8 @@
 		<key>showKey</key>
 		<string>kungFuPandaAwesomeness</string>
 		<key>imageAsset</key>
+		<string></string>
+		<key>about</key>
 		<string></string>
 	</dict>
 	<dict>
@@ -171,6 +203,8 @@
 		<string>kungFuPandaAwesomeness</string>
 		<key>imageAsset</key>
 		<string></string>
+		<key>about</key>
+		<string></string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -180,6 +214,8 @@
 		<key>showKey</key>
 		<string>scoobyDooWhereAreYou</string>
 		<key>imageAsset</key>
+		<string></string>
+		<key>about</key>
 		<string></string>
 	</dict>
 	<dict>
@@ -191,6 +227,8 @@
 		<string>benTen</string>
 		<key>imageAsset</key>
 		<string></string>
+		<key>about</key>
+		<string></string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -200,6 +238,8 @@
 		<key>showKey</key>
 		<string>benTen</string>
 		<key>imageAsset</key>
+		<string></string>
+		<key>about</key>
 		<string></string>
 	</dict>
 	<dict>
@@ -211,6 +251,8 @@
 		<string>benTen</string>
 		<key>imageAsset</key>
 		<string></string>
+		<key>about</key>
+		<string></string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -220,6 +262,8 @@
 		<key>showKey</key>
 		<string>benTen</string>
 		<key>imageAsset</key>
+		<string></string>
+		<key>about</key>
 		<string></string>
 	</dict>
 	<dict>
@@ -231,6 +275,8 @@
 		<string>johnnyTest</string>
 		<key>imageAsset</key>
 		<string></string>
+		<key>about</key>
+		<string></string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -241,6 +287,8 @@
 		<string>johnnyTest</string>
 		<key>imageAsset</key>
 		<string></string>
+		<key>about</key>
+		<string></string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -250,6 +298,8 @@
 		<key>showKey</key>
 		<string>johnnyTest</string>
 		<key>imageAsset</key>
+		<string></string>
+		<key>about</key>
 		<string></string>
 	</dict>
 </array>

@@ -10,10 +10,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CartoonProfileCollectionViewCell" id="aPi-Q2-Aut" customClass="CartoonProfileCollectionViewCell" customModule="Cartoony" customModuleProvider="target">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" contentMode="center" reuseIdentifier="CartoonProfileCollectionViewCell" id="aPi-Q2-Aut" customClass="CartoonProfileCollectionViewCell" customModule="Cartoony" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="195" height="215"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="l2B-4f-Q5O" customClass="CartoonProfileCollectionViewCell" customModule="Cartoony" customModuleProvider="target">
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="l2B-4f-Q5O">
                 <rect key="frame" x="0.0" y="0.0" width="195" height="215"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
@@ -25,42 +25,22 @@
                             <constraint firstAttribute="height" constant="130" id="xlV-eS-h5R"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QS0-5z-tdN">
-                        <rect key="frame" x="12" y="150" width="171" height="18"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QS0-5z-tdN">
+                        <rect key="frame" x="12" y="150" width="171" height="21"/>
                         <attributedString key="attributedText">
                             <fragment content="Cartoon Name">
                                 <attributes>
-                                    <font key="NSFont" size="16" name="AmericanTypewriter"/>
-                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <font key="NSFont" size="18" name="AmericanTypewriter"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                 </attributes>
                             </fragment>
                         </attributedString>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mSt-Pb-nJ7">
-                        <rect key="frame" x="124" y="176" width="55" height="30"/>
-                        <color key="backgroundColor" name="Green"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="55" id="u0f-Kh-KKA"/>
-                        </constraints>
-                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <state key="normal">
-                            <attributedString key="attributedTitle">
-                                <fragment content="Info">
-                                    <attributes>
-                                        <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <font key="NSFont" size="16" name="MarkerFelt-Thin"/>
-                                    </attributes>
-                                </fragment>
-                            </attributedString>
-                        </state>
-                    </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h79-p2-DJo">
-                        <rect key="frame" x="16" y="176" width="55" height="30"/>
+                        <rect key="frame" x="0.0" y="177" width="97" height="38"/>
                         <color key="backgroundColor" name="Green"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="55" id="cwg-Yb-8tl"/>
-                        </constraints>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <state key="normal">
                             <attributedString key="attributedTitle">
@@ -72,21 +52,55 @@
                                 </fragment>
                             </attributedString>
                         </state>
+                        <connections>
+                            <action selector="statsButtonPressed:" destination="aPi-Q2-Aut" eventType="touchUpInside" id="Cxb-gy-eyI"/>
+                        </connections>
                     </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mSt-Pb-nJ7">
+                        <rect key="frame" x="98" y="177" width="97" height="38"/>
+                        <color key="backgroundColor" name="Green"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal">
+                            <attributedString key="attributedTitle">
+                                <fragment content="Info">
+                                    <attributes>
+                                        <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <font key="NSFont" size="16" name="MarkerFelt-Thin"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                        </state>
+                        <connections>
+                            <action selector="infoButtonPressed:" destination="aPi-Q2-Aut" eventType="touchUpInside" id="Puw-zB-ee8"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y7Q-6i-BkU">
+                        <rect key="frame" x="97" y="177" width="1" height="38"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="ppU-1E-ivb"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="mSt-Pb-nJ7" secondAttribute="trailing" constant="16" id="1gM-X0-Vsy"/>
+                    <constraint firstAttribute="trailing" secondItem="mSt-Pb-nJ7" secondAttribute="trailing" id="1gM-X0-Vsy"/>
+                    <constraint firstItem="mSt-Pb-nJ7" firstAttribute="top" secondItem="Y7Q-6i-BkU" secondAttribute="top" id="4Oz-Lz-RIH"/>
                     <constraint firstItem="EsN-aV-lkb" firstAttribute="centerX" secondItem="l2B-4f-Q5O" secondAttribute="centerX" id="4mp-4n-rq7"/>
-                    <constraint firstItem="h79-p2-DJo" firstAttribute="top" secondItem="QS0-5z-tdN" secondAttribute="bottom" constant="8" id="A0G-dR-Xp1"/>
-                    <constraint firstItem="h79-p2-DJo" firstAttribute="width" secondItem="mSt-Pb-nJ7" secondAttribute="width" id="BYd-6F-tFI"/>
-                    <constraint firstItem="mSt-Pb-nJ7" firstAttribute="centerY" secondItem="h79-p2-DJo" secondAttribute="centerY" id="J7W-ex-LAp"/>
+                    <constraint firstItem="h79-p2-DJo" firstAttribute="top" secondItem="QS0-5z-tdN" secondAttribute="bottom" constant="6" id="A0G-dR-Xp1"/>
                     <constraint firstItem="QS0-5z-tdN" firstAttribute="top" secondItem="EsN-aV-lkb" secondAttribute="bottom" constant="8" id="JVG-cB-tdw"/>
+                    <constraint firstItem="Y7Q-6i-BkU" firstAttribute="top" secondItem="h79-p2-DJo" secondAttribute="top" id="Q5K-j0-HmD"/>
+                    <constraint firstItem="Y7Q-6i-BkU" firstAttribute="centerX" secondItem="l2B-4f-Q5O" secondAttribute="centerX" id="Wg3-yN-K4p"/>
+                    <constraint firstItem="mSt-Pb-nJ7" firstAttribute="leading" secondItem="Y7Q-6i-BkU" secondAttribute="trailing" id="dLI-c9-QJt"/>
                     <constraint firstItem="h79-p2-DJo" firstAttribute="height" secondItem="mSt-Pb-nJ7" secondAttribute="height" id="iR3-ka-7nV"/>
-                    <constraint firstItem="h79-p2-DJo" firstAttribute="leading" secondItem="l2B-4f-Q5O" secondAttribute="leading" constant="16" id="jo6-c7-hw6"/>
-                    <constraint firstItem="mSt-Pb-nJ7" firstAttribute="top" secondItem="QS0-5z-tdN" secondAttribute="bottom" constant="8" id="mw4-Xf-Icn"/>
+                    <constraint firstItem="h79-p2-DJo" firstAttribute="leading" secondItem="l2B-4f-Q5O" secondAttribute="leading" id="jo6-c7-hw6"/>
+                    <constraint firstItem="mSt-Pb-nJ7" firstAttribute="top" secondItem="QS0-5z-tdN" secondAttribute="bottom" constant="6" id="mw4-Xf-Icn"/>
+                    <constraint firstItem="Y7Q-6i-BkU" firstAttribute="leading" secondItem="h79-p2-DJo" secondAttribute="trailing" id="nkv-Iw-m1r"/>
                     <constraint firstItem="EsN-aV-lkb" firstAttribute="top" secondItem="l2B-4f-Q5O" secondAttribute="top" constant="12" id="qBL-BB-tCC"/>
                     <constraint firstAttribute="trailing" secondItem="QS0-5z-tdN" secondAttribute="trailing" constant="12" id="teG-02-DrN"/>
                     <constraint firstItem="QS0-5z-tdN" firstAttribute="leading" secondItem="l2B-4f-Q5O" secondAttribute="leading" constant="12" id="ufU-gG-iPS"/>
+                    <constraint firstItem="Y7Q-6i-BkU" firstAttribute="bottom" secondItem="h79-p2-DJo" secondAttribute="bottom" id="wh3-8J-k2c"/>
+                    <constraint firstAttribute="bottom" secondItem="h79-p2-DJo" secondAttribute="bottom" id="yIC-LA-Lsr"/>
                 </constraints>
             </collectionViewCellContentView>
             <size key="customSize" width="161" height="143"/>
